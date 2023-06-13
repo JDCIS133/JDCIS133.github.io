@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- 
+JD MCC PROJECT 1
+CIS133DA 15962
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <style>
+    
+    form {
+    background: blue;
+    padding: 1rem 6rem 3rem;
+    border-radius: 5rem;
+}
+
+body {
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.5;
+    color: red;
+    max-width: 960px;
+    margin: auto;
+}
+
+    </style>
+  </head>
+  
+ 
+  <body>
+    <form id="survey-form">
+       <h1 id="title" class="text-center">CIS133 Survey Form</h1>
+        <p id="description" class="description text-center">
+          THANK YOU FOR YOUR TIME AND FOR THE CONSTRUCTIVE FEEDBACK
+        </p>
+        <div class="form-group">
+          <label id="name-label" for="name">NAME</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">EMAIL</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">AGE<span class="clue">(OPTIONAL; 15-99)</span></label>
+          <input type="number" name="age" id="number" min="15" max="99" class="form-control" placeholder="Age">
+        </div>
+        <div class="form-group">
+          <p>WHAT IS YOUR CURRENT ROLE?</p>
+          <select id="dropdown" name="role" class="form-control" required="">
+            <option disabled="" selected="" value="">CURRENT ROLE</option>
+            <option value="ftstudent">FT STUDENT</option>
+            <option value="ftjob">FT SALARIED JOB</option>
+            <option value="seeker">NOT ACTIVELY SEEKING</option>
+            <option value="preference">PREFER NOT TO DISCLOSE</option>
+            <option value="other">OTHER</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>WOULD YOU REFER A FRIEND OR FAMILY MEMBER TO CIS?</p>
+          <label>
+            <input name="user-recommend" value="YES" type="radio" class="input-radio" checked="">YES</label>
+          <label>
+            <input name="user-recommend" value="MAYBE" type="radio" class="input-radio">MAYBE</label>
+
+          <label><input name="user-recommend" value="NO" type="radio" class="input-radio">NOT SURE</label>
+        </div>
+
+        <div class="form-group">
+          <p>WHAT IS YOUR FAVORITE PART OF CIS?</p>
+          <select id="most-like" name="mostLike" class="form-control" required="">
+            <option disabled="" selected="" value="">SELECT OPINION</option>
+            <option value="CHALLENGING">CHALLENGING</option>
+            <option value="ASSIGNMENTS">ASSIGNMENTS</option>
+            <option value="CLASS-MATES">CLASS MATES</option>
+            <option value="NEUTRAL">NEUTRAL</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            WHAT CHANGES WOULD YOU RECOMMEND?
+            <span class="clue">(CHECK ALL THAT APPLY)</span>
+          </p>
+
+          <label>
+            <input name="prefer" value="assignments" type="checkbox" class="input-checkbox">DIFFICULTY OF ASSIGNMENTS</label>
+          <label>
+            <input name="prefer" value="deadlines" type="checkbox" class="input-checkbox">DEADLINE TIMEFRAMES</label>
+          <label>
+            <input name="prefer" value="unique-hw" type="checkbox" class="input-checkbox">UNIQUE VARIATION OF HOMEWORKS</label>
+        </div>
+
+        <div class="form-group">
+          <p>ANY FURTHER QUESTIONS OR COMMENTS?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="ENTER YOUR COMMENTS.."></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            SUBMIT
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
