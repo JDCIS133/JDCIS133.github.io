@@ -1,12 +1,15 @@
+#title {
+  font-weight: bolder;
+}
 form {
     background: black;
     padding: 1rem 6rem 3rem;
     border-radius: 5rem;
 }
+
 body {
-    font-family: sans-serif;
-    font-size: 1rem;
-    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     line-height: 1.5;
     color: white;
     max-width: auto;
@@ -16,8 +19,7 @@ body {
   font-style: italic;
 }
 .form-group {
-  font-style: strong;
-  font-weight: 800;
+  color: white;
 }
 
 #dropdown {
@@ -36,4 +38,21 @@ body {
   cursor: pointer;
 }
 
-
+#email-label {
+  font-style: strong;
+}
+#email {
+  padding-left: 10px;
+  margin-left: 29px;
+}
+#name {
+  padding-left: 10px;
+  margin-left: 26px;
+}
+textarea {
+  height: 1.0em;
+  width: 20em;
+}
+#number {
+  margin-left: 35px;
+}
