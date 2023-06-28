@@ -1,6 +1,7 @@
 #title {
   font-weight: bolder;
 }
+
 form {
     background: black;
     padding: 1rem 6rem 3rem;
@@ -15,9 +16,11 @@ body {
     max-width: auto;
     margin: auto;
 }
+
 .clue {
   font-style: italic;
 }
+
 .form-group {
   color: white;
 }
@@ -25,15 +28,19 @@ body {
 #dropdown {
   cursor: pointer;
 }
+
 #most-like {
   cursor: pointer;
 }
+
 .input-checkbox {
   cursor: pointer;
 }
+
 #submit {
   cursor: pointer;
 }
+
 .input-radio {
   cursor: pointer;
 }
@@ -41,18 +48,25 @@ body {
 #email-label {
   font-style: strong;
 }
+
 #email {
   padding-left: 10px;
-  margin-left: 29px;
+  margin-left: 35px;
 }
+
 #name {
   padding-left: 10px;
-  margin-left: 26px;
+  margin-left: 32px;
+ 
 }
+
+#number {
+  margin-left: 35px;
+}
+
 textarea {
   height: 1.0em;
   width: 20em;
 }
-#number {
-  margin-left: 35px;
-}
+
+
