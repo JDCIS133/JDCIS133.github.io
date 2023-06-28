@@ -9,7 +9,7 @@ body {
     font-weight: 800;
     line-height: 1.5;
     color: white;
-    max-width: 960px;
+    max-width: auto;
     margin: auto;
 }
 .clue {
