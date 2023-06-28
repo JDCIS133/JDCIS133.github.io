@@ -11,21 +11,7 @@ CIS133DA 15962
     <link href="styles.css" rel="stylesheet"/>
     <style>
     
-    form {
-    background: blue;
-    padding: 1rem 6rem 3rem;
-    border-radius: 5rem;
-}
-
-body {
-    font-size: 1rem;
-    font-weight: 800;
-    line-height: 1.5;
-    color: red;
-    max-width: 960px;
-    margin: auto;
-}
-
+    
     </style>
   </head>
   
@@ -34,69 +20,74 @@ body {
     <form id="survey-form">
        <h1 id="title" class="text-center">CIS133 Survey Form</h1>
         <p id="description" class="description text-center">
-          THANK YOU FOR YOUR TIME AND FOR THE CONSTRUCTIVE FEEDBACK
+          Thank you for your time and for the constructive feedback 
         </p>
+        
         <div class="form-group">
-          <label id="name-label" for="name">NAME</label>
-          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+          
+          <div class="control">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+          </div>
         </div>
+      
         <div class="form-group">
-          <label id="email-label" for="email">EMAIL</label>
+          <label id="email-label" for="email">Email</label>
           <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
         </div>
         <div class="form-group">
-          <label id="number-label" for="number">AGE<span class="clue">(OPTIONAL; 15-99)</span></label>
+          <label id="number-label" for="number">Age <span class="clue">(Optional; 15-99)</span></label>
           <input type="number" name="age" id="number" min="15" max="99" class="form-control" placeholder="Age">
         </div>
         <div class="form-group">
-          <p>WHAT IS YOUR CURRENT ROLE?</p>
+          <span>What is your current role ?</span>
           <select id="dropdown" name="role" class="form-control" required="">
-            <option disabled="" selected="" value="">CURRENT ROLE</option>
-            <option value="ftstudent">FT STUDENT</option>
-            <option value="ftjob">FT SALARIED JOB</option>
-            <option value="seeker">NOT ACTIVELY SEEKING</option>
-            <option value="preference">PREFER NOT TO DISCLOSE</option>
-            <option value="other">OTHER</option>
+            <option disabled="" selected="" value="">Current role</option>
+            <option value="ftstudent">Ft Student</option>
+            <option value="ftjob">FT Salaried Job</option>
+            <option value="seeker">Not Actively Seeking</option>
+            <option value="preference">Prefer Not to Disclose</option>
+            <option value="other">Other</option>
           </select>
         </div>
 
         <div class="form-group">
-          <p>WOULD YOU REFER A FRIEND OR FAMILY MEMBER TO CIS?</p>
+          <span class="form-titles">Would you refer a friend or a family member to CIS?</span>
           <label>
-            <input name="user-recommend" value="YES" type="radio" class="input-radio" checked="">YES</label>
+            <input name="user-recommend" value="YES" type="radio" class="input-radio" checked="">Yes</label>
           <label>
-            <input name="user-recommend" value="MAYBE" type="radio" class="input-radio">MAYBE</label>
+            <input name="user-recommend" value="MAYBE" type="radio" class="input-radio">Maybe</label>
 
-          <label><input name="user-recommend" value="NO" type="radio" class="input-radio">NOT SURE</label>
+          <label><input name="user-recommend" value="NO" type="radio" class="input-radio">Not Sure</label>
         </div>
 
         <div class="form-group">
-          <p>WHAT IS YOUR FAVORITE PART OF CIS?</p>
+          <span>What is your favorite part of CIS?</span>
           <select id="most-like" name="mostLike" class="form-control" required="">
-            <option disabled="" selected="" value="">SELECT OPINION</option>
-            <option value="CHALLENGING">CHALLENGING</option>
-            <option value="ASSIGNMENTS">ASSIGNMENTS</option>
-            <option value="CLASS-MATES">CLASS MATES</option>
-            <option value="NEUTRAL">NEUTRAL</option>
+            <option disabled="" selected="" value="">Select Option</option>
+            <option value="CHALLENGING">Challenging</option>
+            <option value="ASSIGNMENTS">Assignments</option>
+            <option value="CLASS-MATES">Class Mates</option>
+            <option value="NEUTRAL">Neutral</option>
           </select>
         </div>
 
         <div class="form-group">
-          <p>
-            WHAT CHANGES WOULD YOU RECOMMEND?
-            <span class="clue">(CHECK ALL THAT APPLY)</span>
-          </p>
+          <span>
+            What changes would you recommend?
+            <span class="clue">(Check all that apply)</span>
+          </span>
 
           <label>
-            <input name="prefer" value="assignments" type="checkbox" class="input-checkbox">DIFFICULTY OF ASSIGNMENTS</label>
+            <input name="prefer" value="assignments" type="checkbox" class="input-checkbox">Difficulty of Assignments</label>
           <label>
-            <input name="prefer" value="deadlines" type="checkbox" class="input-checkbox">DEADLINE TIMEFRAMES</label>
+            <input name="prefer" value="deadlines" type="checkbox" class="input-checkbox">Deadline Timeframes</label>
           <label>
-            <input name="prefer" value="unique-hw" type="checkbox" class="input-checkbox">UNIQUE VARIATION OF HOMEWORKS</label>
+            <input name="prefer" value="unique-hw" type="checkbox" class="input-checkbox">Unique Variation of Homeworks</label>
         </div>
 
         <div class="form-group">
-          <p>ANY FURTHER QUESTIONS OR COMMENTS?</p>
+          <span>Any further questions or comments? </span>
           <textarea id="comments" class="input-textarea" name="comment" placeholder="ENTER YOUR COMMENTS.."></textarea>
         </div>
 
