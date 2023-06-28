@@ -1,0 +1,41 @@
+<style>
+    form {
+    background: black;
+    padding: 1rem 6rem 3rem;
+    border-radius: 5rem;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.5;
+    color: white;
+    max-width: 960px;
+    margin: auto;
+}
+.clue {
+  font-style: italic;
+}
+.form-group {
+  font-style: strong;
+  font-weight: 800;
+}
+
+#dropdown {
+  cursor: pointer;
+}
+#most-like {
+  cursor: pointer;
+}
+.input-checkbox {
+  cursor: pointer;
+}
+#submit {
+  cursor: pointer;
+}
+.input-radio {
+  cursor: pointer;
+}
+</style>
+
